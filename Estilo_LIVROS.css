@@ -1,0 +1,849 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;      
+      
+}   
+
+body {
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* IMAGENS A PASSAR */
+
+#carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    transform: translate(1%, 0%);
+    height: auto    
+}
+
+#image-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: auto;
+}
+
+.carousel-image {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    width: 100%;
+    height: auto; 
+}
+
+
+.efeito {
+    width: 190px;
+    height: 290px;
+    margin: 0 auto;
+    z-index: 998;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-top: 5%;
+}
+
+
+table {
+    margin: 0 auto;
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+   
+    border: none;/* Remove as linhas da tabela */
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+     border: none;
+    
+}
+
+
+
+
+
+/* IMAGENS DE FUNDO */
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(IMG_1161.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+
+.caixa-de-texto {
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+    text-align: center;
+    z-index: 998;
+}
+
+
+
+
+
+
+.livro1 .img {
+    background: url(LIVRO5.png);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+.img{
+    background: url(LIVRO5.png);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+    ;
+}
+
+.card .content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+
+/* --------------------------- LIVRO #2---------------------------------- */
+.livro2 .img {
+    background: url(LIVRO3.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+}
+
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+.img{
+    background: url(LIVRO5.png);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+    ;
+}
+
+.card .content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+/* --------------------------- LIVRO #3---------------------------------- */
+
+
+.livro3 .img {
+    background: url(LIVRO2.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+}
+
+
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+.img{
+    background: url(LIVRO5.png);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+    ;
+}
+
+.card.content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+
+
+
+
+
+ /* --------------------------- LIVRO #4---------------------------------- */
+
+
+.livro4 .img {
+    background: url(LIVRO6.jpg);
+
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+}
+
+
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{  
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.card.content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+
+
+
+
+
+ /* --------------------------- LIVRO #5---------------------------------- */
+
+
+.livro5 .img {
+    background: url(LIVRO7.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+}
+
+
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+.img{
+    background: url(LIVRO5.png);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+    ;
+}
+
+.card.content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+ /* --------------------------- LIVRO #6---------------------------------- */
+
+
+.livro6 .img {
+    background: url(LIVRO8.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+}
+
+
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-container{
+    width: 55%;
+    margin: 0 auto;
+    height: 100%;
+}
+.img{
+    background: url(LIVRO5.png);
+    background-size: 100%;
+    background-position-x: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-size 0.3s ease-in-out;
+    background-repeat: no-repeat
+    ;
+}
+
+.card.content{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 22%;
+    background: #00000050;
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+    transition: height 0.3s ease-in-out;
+}
+.content.description{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.action-btn{
+    float: right;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    background: #ca61f3;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.action-btn:hover{
+    background: #646363;
+}
+
+.card:hover .content{
+    height: 80%;
+}
+.card:hover .img{
+    background-size: 150%;
+}
+.card:hover .content .description{
+    opacity: 1;
+}
+ .content h3 {
+    color: #ffffff;
+ }
+
+/* BARRA ESQUERDA */
+
+.barra-lado{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.745);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s; 
+}
+
+/* LOGO DA BARRA ESQUERDA */
+
+.logo2 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.logo2 img{
+    width: 90px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 150%;
+    font-size: 10px;
+    padding: 1px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    color: black;
+}
+
+.logo h1{
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap; 
+}
+
+.logo h2 {
+    font-size: 10px;
+}
+
+.logo   div{
+  display: none;
+}
+
+.logo3 {
+    position: fixed;
+    top: 1%;
+    right: -3.5%;
+    transform: translateX(-45%);
+    z-index: 1000;
+    
+}
+
+.logosite{
+    width: 100px;
+    margin-right: auto;
+    position: relative;
+    right: 20px;
+}
+
+/* ICONS DA BARRA ESQUERDA */
+
+ul{
+    list-style: none;
+    padding: 0.5px 15px;
+}
+
+ul li{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li img{
+    width: 35px;
+    margin-right: 0px;
+}
+
+ul li p{
+   white-space: nowrap;
+   display: none;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   font-size: 20px;
+}
+
+.barra-lado:hover{
+    width: 250px;
+}
+
+.barra-lado:hover .logo div{
+    display: block;
+}
+
+.barra-lado:hover .logo{
+    width: 10%;
+}
+
+.barra-lado:hover ul li p{
+    display: block;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.barra-lado:hover ul li img{    
+    width: 35px;
+    margin-right: 30px;
+}
+
+.barra-lado:hover ul li{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}   
+
+.barra-lado:hover .logosite{
+    right: 1;
+}
+
+/* REDES */
+
+.face {
+    position: fixed;
+    bottom: 20px;
+    right: 13px;
+    z-index: 9999;
+
+}
+
+.face img{
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.insta {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 9999;
+}
+
+.insta img{
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cam {
+    position: fixed;
+    bottom: 20px;
+    right: 110px;
+    z-index: 9999;
+}
+
+.cam img{
+    width: 45px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.you {
+    position: fixed;
+    bottom: 18px;
+    right: 165px;
+    z-index: 9999;
+}
+
+.you img{
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagem-sobre-texto {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+.imagem-sobre-texto2 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+/* CONTÉUDO */
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BARRA DE DESLOCAMENTO */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
