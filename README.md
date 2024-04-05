@@ -1,0 +1,1 @@
+# educale.camaratee.pt
